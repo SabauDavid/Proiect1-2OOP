@@ -1,2 +1,2 @@
 # Proiect1OOP
-OCEAN>src/Ocean>Main.java
+OCEAN--->src/Ocean--->Main.java
