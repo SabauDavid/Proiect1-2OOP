@@ -19,25 +19,24 @@ public class Inventory {
     {
         this._pearls=_pearls+1;
     }
-    private void set_sharkbite()
+    public void set_sharkbite()
     {
         this._fish=this._fish-1;
+        this._maxsharkatk--;
     }
 
     public static int main(){
         Water myodds= new Water();
-        Inventory myInv= new Inventory();
+        myodds._setodds();
         int luck = 0;
-            if(myodds._odds==1)
+            if(myodds.get_odds()==1)
             luck=1;
             else
-                if(myodds._odds==2)
+                if(myodds.get_odds()==2)
                    luck=2;
                 else
-                    if(myodds._odds==3&&myInv._maxsharkatk!=0)
-                    {luck=3;
-                    myInv.set_sharkbite();
-                    myInv._maxsharkatk--;}
+                    if(myodds.get_odds()==3)
+                        return 3;
 
 
         return luck;

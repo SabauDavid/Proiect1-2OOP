@@ -18,11 +18,11 @@ protected int get_currentDepth()
     public void _deeper(int _currentDepth)
     {
 
-         this._currentDepth=_currentDepth-1;
+         this._currentDepth=_currentDepth+1;
     }
     public void _undeeper(int _currentDepth)
     {
-        this._currentDepth=_currentDepth+1;
+        this._currentDepth=_currentDepth-1;
     }
 
         public void _revealDepth (int get_currentDepth,int _maxDepth)
@@ -42,7 +42,7 @@ protected int get_currentDepth()
                         break;
                     }
                 if (get_currentDepth < _getmaxDepth()) {
-                    System.out.println("Te aflii la"+Integer.toString(get_currentDepth)+"000 mii de metri");
+                    System.out.println("Te aflii la "+Integer.toString(get_currentDepth)+"000 mii de metri adancime");
                     flag = 0;
                     break;
                 }

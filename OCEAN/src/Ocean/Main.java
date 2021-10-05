@@ -27,17 +27,25 @@ public class Main {
                         }
 
                         case 2: {
-                            if (BONK._currentDepth == 0) {
-                                System.out.println("Mai sus nu mere");
+                            if (BONK.get_currentDepth() == 0) {
+                                System.out.println("Mai sus nu merge");
 
                             }
                             else
                             {
                                 BONK._undeeper(BONK._currentDepth);
+
                              if(miau.main()==1)
                              miau.set_fish(miau._fish);
                              else if(miau.main()==2)
                                  miau.set_pearls(miau._pearls);
+                             else
+                                 if(miau.main()==3&&miau.get_fish()!=0)
+                                 {
+                                     miau.set_sharkbite();
+                                     miau.set_sharkbite();
+                                     miau.set_sharkbite();
+                                 }
 
                             }
 
@@ -45,7 +53,7 @@ public class Main {
                         }
 
                         case 3:{
-                                if(BONK._currentDepth==BONK._getmaxDepth())
+                                if(BONK.get_currentDepth()==BONK._getmaxDepth())
                                 {
                                    System.out.println("Fundul Oceanului, yay");
                                 }
@@ -56,6 +64,9 @@ public class Main {
                                         miau.set_fish(miau._fish);
                                     else if(miau.main()==2)
                                         miau.set_pearls(miau._pearls);
+                                    else
+                                        if(miau.main()==3)
+                                            miau.set_sharkbite();
                                 }
 
                                 break;
