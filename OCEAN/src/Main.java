@@ -6,9 +6,10 @@ public class Main {
         Console console = System.console();
         if(console!=null)
         {
-            console.writer().println("Nu exista o consola !");
+            System.out.println("Alegeti o optiune\n 1. Mergeti mai adanc\n 2. Mergeti la suprafata\n 3. Verificati inventarul");
             Scanner scanner = new Scanner(console.reader());
-            System.out.println("Alegeti o optiune");
+
+
         }
         else
         {
