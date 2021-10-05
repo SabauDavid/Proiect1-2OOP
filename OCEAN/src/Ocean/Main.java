@@ -1,62 +1,82 @@
 package Ocean;
 import Ocean.SeaLifeBro.Inventory;
-import java.io.Console;
+import java.io.*;
 import java.util.Scanner;
 import java.lang.Boolean;
+
 public class Main {
     public static void main(String[] args) {
             Ocean.Submarin BONK=new Ocean.Submarin();
             Ocean.SeaLifeBro.Inventory miau=new Ocean.SeaLifeBro.Inventory();
+            Ocean.SeaLifeBro.Water apa= new Ocean.SeaLifeBro.Water();
             Boolean m=true;
-            Console console = System.console();
-            Scanner scanner = new Scanner(console.reader());
-            if(console!=null) {
+            Scanner scanner = new Scanner(System.in);
+            BONK.set_maxDepth(8);
+            Console cnsl= System.console();
                 while(m)
                 {
                     System.out.println("Alegeti o optiune\n 1. Afisati adancimea \n 2. Mergeti la suprafata\n 3. Mergeti mai adanc\n 4. Verificati inventarul \n 5. END GAME");
-
-
                     int o= scanner.nextInt();
                     switch (o) {
                         case 1: {
-                            BONK._revealDepth(BONK._currentDepth);
+                            BONK._revealDepth(BONK._currentDepth, BONK._getmaxDepth());
+                            System.out.println("    ____[]_____,");
+                            System.out.println("+--| [] [] []  }");
+                            System.out.println("   \\__________} ");
+                            break;
                         }
 
                         case 2: {
-                            if(BONK._currentDepth==0)
+                            if (BONK._currentDepth == 0) {
                                 System.out.println("Mai sus nu mere");
+
+                            }
                             else
                             {
                                 BONK._undeeper(BONK._currentDepth);
-                                Inventory.main();
+                             if(miau.main()==1)
+                             miau.set_fish(miau._fish);
+                             else if(miau.main()==2)
+                                 miau.set_pearls(miau._pearls);
+
                             }
+
+                            break;
                         }
 
                         case 3:{
-                            if(BONK._currentDepth==BONK._maxDepth)
-                                System.out.println("Decat daca ai adus o bormasina uriasa, nu merge mai jos");
-                            else
-                            {
-                                BONK._deeper(BONK._currentDepth);
-                                Inventory.main();
-                            }
+                                if(BONK._currentDepth==BONK._getmaxDepth())
+                                {
+                                   System.out.println("Fundul Oceanului, yay");
+                                }
+                                else
+                                {
+                                    BONK._deeper(BONK._currentDepth);
+                                    if(miau.main()==1)
+                                        miau.set_fish(miau._fish);
+                                    else if(miau.main()==2)
+                                        miau.set_pearls(miau._pearls);
+                                }
+
+                                break;
+
                         }
                         case 4:{
                             System.out.println("Avem "+miau.get_fish()+" pesti");
                             System.out.println("Avem "+miau.get_pearls()+" perle");
+                            break;
                         }
                         case 5: {
                             m=false;
                             break;
                         }
+
                     }
+
                 }
             }
-            else
-            {
-                System.out.println("Nu exista o consola !");
-            }
+
 
     }
 
-    }
+
