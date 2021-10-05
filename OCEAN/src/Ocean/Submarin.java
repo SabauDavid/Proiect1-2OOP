@@ -42,7 +42,7 @@ protected int get_currentDepth()
                         break;
                     }
                 if (get_currentDepth < _getmaxDepth()) {
-                    System.out.println("\nTe afli la " + get_currentDepth + "000 mii de metri adancime");
+                    System.out.println("Te aflii la"+Integer.toString(get_currentDepth)+"000 mii de metri");
                     flag = 0;
                     break;
                 }

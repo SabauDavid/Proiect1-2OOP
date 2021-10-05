@@ -36,7 +36,8 @@ public class Inventory {
                 else
                     if(myodds._odds==3&&myInv._maxsharkatk!=0)
                     {luck=3;
-                    myInv.set_sharkbite();}
+                    myInv.set_sharkbite();
+                    myInv._maxsharkatk--;}
 
 
         return luck;
