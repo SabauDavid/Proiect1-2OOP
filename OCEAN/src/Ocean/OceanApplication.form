@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Ocean.OceanApplication">
+  <grid id="27dc6" binding="OceanPanel" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="743" height="689"/>
+    </constraints>
+    <properties>
+      <background color="-6054028"/>
+      <foreground color="-6054028"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <vspacer id="30da7">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="fa893" class="javax.swing.JLabel" binding="titlu">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Monospaced" size="48" style="1"/>
+          <foreground color="-16252741"/>
+          <text value="Ocean Exploring"/>
+        </properties>
+      </component>
+      <component id="589f" class="javax.swing.JLabel" binding="inventar">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Algerian" size="20" style="0"/>
+          <foreground color="-16673822"/>
+          <text value="Inventory"/>
+        </properties>
+      </component>
+      <component id="be892" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Algerian" size="22" style="0"/>
+          <foreground color="-16673822"/>
+          <text value="Submarine"/>
+        </properties>
+      </component>
+      <grid id="80627" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4749"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="622e7" layout-manager="GridLayoutManager" row-count="9" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4749"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <hspacer id="55502">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <toolbar id="c4ac3">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11054080"/>
+                  <floatable value="false"/>
+                  <foreground color="-11052969"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="93db5" class="javax.swing.JButton" binding="inve">
+                    <constraints/>
+                    <properties>
+                      <background color="-11052969"/>
+                      <foreground color="-14163456"/>
+                      <text value="Update inventory"/>
+                    </properties>
+                  </component>
+                  <vspacer id="f7777">
+                    <constraints/>
+                  </vspacer>
+                  <component id="6ae5b" class="javax.swing.JButton" binding="adnc">
+                    <constraints/>
+                    <properties>
+                      <background color="-11052969"/>
+                      <foreground color="-14163456"/>
+                      <text value="Update depth"/>
+                    </properties>
+                  </component>
+                </children>
+              </toolbar>
+              <component id="cf73a" class="javax.swing.JTextField" binding="perle">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="75" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11054080"/>
+                  <editable value="false"/>
+                  <font size="22" style="2"/>
+                  <foreground color="-1966049"/>
+                  <text value="Pearls:0"/>
+                </properties>
+              </component>
+              <component id="e7ffb" class="javax.swing.JTextField" binding="pesti">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="75" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11054080"/>
+                  <editable value="false"/>
+                  <font size="22" style="2"/>
+                  <foreground color="-1966049"/>
+                  <text value="Fish:0"/>
+                </properties>
+              </component>
+              <component id="9bbfb" class="javax.swing.JTextField" binding="adancime">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="75" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11054080"/>
+                  <editable value="false"/>
+                  <font name="Algerian" size="22" style="2"/>
+                  <foreground color="-16673822"/>
+                  <text value="Depth: 0000 meters"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="62eca" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4749"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="59aed" class="javax.swing.JButton" binding="displaySubmarineButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-11052969"/>
+              <foreground color="-16447423"/>
+              <text value="Display Submarine"/>
+            </properties>
+          </component>
+          <component id="80adb" class="javax.swing.JButton" binding="hideSubmarineButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-11052969"/>
+              <foreground color="-16447423"/>
+              <text value="Hide Submarine"/>
+            </properties>
+          </component>
+          <component id="392d1" class="javax.swing.JLabel" binding="SubmarineLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-16673822"/>
+              <foreground color="-16252741"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <icon value="Ocean/Images/submarine.png"/>
+              <text value=""/>
+              <verticalAlignment value="1"/>
+              <verticalTextPosition value="1"/>
+            </properties>
+          </component>
+          <toolbar id="c4d97">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="20"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-11054080"/>
+              <borderPainted value="false"/>
+              <floatable value="false"/>
+              <foreground color="-11052969"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="b62b8" class="javax.swing.JButton" binding="deep">
+                <constraints/>
+                <properties>
+                  <background color="-11052969"/>
+                  <foreground color="-14163456"/>
+                  <text value="Go deeper"/>
+                </properties>
+              </component>
+              <vspacer id="63f5d">
+                <constraints/>
+              </vspacer>
+              <component id="771ad" class="javax.swing.JButton" binding="rise">
+                <constraints/>
+                <properties>
+                  <background color="-11052969"/>
+                  <foreground color="-14163456"/>
+                  <text value="Rise to the surface"/>
+                </properties>
+              </component>
+            </children>
+          </toolbar>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

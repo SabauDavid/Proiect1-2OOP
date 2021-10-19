@@ -5,13 +5,15 @@ import java.util.Scanner;
 import java.lang.Boolean;
 
 public class Main {
+
     public static void main(String[] args) {
-            Ocean.Submarin BONK=new Ocean.Submarin();
-            Ocean.SeaLifeBro.Inventory miau=new Ocean.SeaLifeBro.Inventory();
-            Ocean.SeaLifeBro.Water apa= new Ocean.SeaLifeBro.Water();
-            Boolean m=true;
+
+        Ocean.Submarin BONK=new Ocean.Submarin();
+        Ocean.SeaLifeBro.Inventory miau=new Ocean.SeaLifeBro.Inventory();
+        Ocean.SeaLifeBro.Water water= new Ocean.SeaLifeBro.Water();
             Scanner scanner = new Scanner(System.in);
             BONK.set_maxDepth(8);
+            boolean m=true;
             Console cnsl= System.console();
                 while(m)
                 {
